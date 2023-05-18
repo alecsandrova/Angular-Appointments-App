@@ -1,0 +1,76 @@
+#page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 93vh;
+}
+
+#title-div {
+  height: 5vh;
+}
+
+#title {
+  margin-top: 2vh;
+  margin-left: 5vw;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#appointments {
+  height: 81vh;
+  width: 100vw;
+}
+
+#notifications {
+  height: 81vh;
+  width: 100vw;
+}
+
+.mat-mdc-tab.mdc-tab {
+  height: 7vh !important;
+  width: 25vw;
+  min-width: 25vw;
+  max-width: 25vw;
+}
+
+h4 {
+  margin-left: 5vw;
+}
+
+button {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  width: 80vw;
+  font-size: 17px;
+}
+
+mat-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+mat-card {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+#rating {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+}
+
+span {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+mat-icon {
+  margin-top: 11px;
+  color: #e4cf0f;
+}

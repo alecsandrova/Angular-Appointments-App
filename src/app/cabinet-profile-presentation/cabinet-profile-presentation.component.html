@@ -1,0 +1,128 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<div id="page">
+  <img
+    id="cabinet"
+    src="https://t4.ftcdn.net/jpg/05/24/79/53/360_F_524795399_deNrm5E4w2YDrx0JRP8mTe89ghUMvIoC.jpg"
+  />
+  <div id="details">
+    <h4>{{ dummyCabinet.nume }}</h4>
+    <div id="rating">
+      <mat-icon>star</mat-icon>
+      <p>{{ dummyCabinet.rating }}</p>
+      <span id="recenzii">
+        <p>{{ dummyCabinet.recenzii.length }} Recenzii</p>
+      </span>
+    </div>
+    <div id="adress">
+      <mat-icon>location_on</mat-icon>
+      <p>{{ dummyCabinet.adresa }}</p>
+    </div>
+  </div>
+  <div id="chips">
+    <button class="chip" mat-raised-button color="primary">Servicii</button>
+    <button class="chip" mat-raised-button color="primary">Specialisti</button>
+    <button class="chip" mat-raised-button color="primary">Recenzii</button>
+    <button class="chip" mat-raised-button color="primary">Contact</button>
+  </div>
+  <div id="services">
+    <h4>Servicii</h4>
+    <div id="profileCard">
+      <img
+        id="profile"
+        src="data:image/jpeg;base64,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"
+      />
+      <span id="profileInfo">
+        <h4>Dr. Nume Prenume</h4>
+        <p>Vezi profilul</p>
+      </span>
+    </div>
+    <mat-card class="card">
+      <div class="card-details">
+        <p class="service-title">*Insert serviciu later*</p>
+        <p class="service-price">*Insert pret later*</p>
+      </div>
+      <button mat-raised-button color="primary" class="card-btn">
+        Rezerva
+      </button>
+    </mat-card>
+  </div>
+  <div id="reviews">
+    <h4>Recenzii</h4>
+    <div class="overall-rating">
+      <h4>{{ rating }}</h4>
+      <ngx-star-rating [(ngModel)]="rating" [id]="'rating'"></ngx-star-rating>
+    </div>
+    <h4>{{ dummyCabinet.recenzii.length }} recenzii</h4>
+    <div class="review">
+      <span class="review-stars">
+        <h4>*Insert later*</h4>
+        <ngx-star-rating [(ngModel)]="rating" [id]="'rating'"></ngx-star-rating>
+      </span>
+      <p>":("</p>
+    </div>
+  </div>
+  <div id="galery">
+    <h4>Galerie</h4>
+    <img
+      id="cabinet"
+      src="https://t4.ftcdn.net/jpg/05/24/79/53/360_F_524795399_deNrm5E4w2YDrx0JRP8mTe89ghUMvIoC.jpg"
+    />
+  </div>
+  <div id="contact">
+    <h4>Contact</h4>
+    <p>*google map that doesnt load for sum reason*</p>
+    <p>//TO DO: find out why google-map component doesnt load</p>
+    <!-- READ THIS -->
+    <!-- https://stackblitz.com/edit/angular-google-maps-demo?file=app%2Fapp.module.ts -->
+    <!-- see whats the thing with the api key -->
+    <!-- READ THIS -->
+    <!-- <google-map
+      height="500px"
+      width="100%"
+      [zoom]="zoom"
+      [center]="center"
+      [options]="options"
+    ></google-map> -->
+    <button mat-raised-button color="primary">Vezi directii de navigare</button>
+    <span id="schedule">
+      <mat-icon>calendar_today</mat-icon>
+      <h4>Program</h4>
+      <!-- TO DO: implement with ngFor once connected to api -->
+      <span class="schedule-row">
+        <p class="day">Luni</p>
+        <p class="period">7:00-19:00</p>
+      </span>
+      <span class="schedule-row">
+        <p class="day">Marti</p>
+        <p class="period">7:00-19:00</p>
+      </span>
+      <span class="schedule-row">
+        <p class="day">Miercuri</p>
+        <p class="period">7:00-19:00</p>
+      </span>
+      <span class="schedule-row">
+        <p class="day">Joi</p>
+        <p class="period">7:00-19:00</p>
+      </span>
+      <span class="schedule-row">
+        <p class="day">Vineri</p>
+        <p class="period">7:00-19:00</p>
+      </span>
+      <span class="schedule-row">
+        <p class="day">Sambata</p>
+        <p class="period">Liber</p>
+      </span>
+      <span class="schedule-row">
+        <p class="day">Duminica</p>
+        <p class="period">Liber</p>
+      </span>
+      <span id="phone">
+        <mat-icon> phone</mat-icon>
+        <h4>0769 420 069</h4>
+      </span>
+    </span>
+  </div>
+</div>

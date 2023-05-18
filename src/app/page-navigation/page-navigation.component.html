@@ -1,0 +1,39 @@
+{{checkUser()}}
+<div id="navigation-page">
+  <mat-tab-group id="navigation " headerPosition="below">
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon>home</mat-icon>
+        Acasă
+      </ng-template>
+      <app-main-feed-page></app-main-feed-page>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon>calendar_today</mat-icon>
+        Programări
+      </ng-template>
+      <app-appointments-page></app-appointments-page>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon>favorite</mat-icon>
+        Favorite
+      </ng-template>
+      <app-favourites-page></app-favourites-page>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon>person</mat-icon>
+        Cont
+      </ng-template>
+      <div *ngIf="!isUser" class="account">
+        <app-sign-in></app-sign-in>
+      </div>
+      <div *ngIf="isUser">
+        <app-profile-page></app-profile-page>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+<router-outlet></router-outlet>

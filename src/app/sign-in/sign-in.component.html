@@ -1,0 +1,38 @@
+<div id="sign-in-page">
+  <button mat-icon-button color="primary" id="back" (click)="goToPage('')">
+    <mat-icon>keyboard_arrow_left</mat-icon>
+  </button>
+  <h1 id="title">DENTALIO</h1>
+  <h4 id="subtitle">Autentifică-te pentru a face programări</h4>
+
+  <button
+    (click)="loginWithGoogle()"
+    mat-raised-button
+    class="google-login-btn"
+  >
+    Continuă cu Google
+  </button>
+  <button
+    (click)="loginWithFacebook()"
+    mat-raised-button
+    class="facebook-login-btn"
+  >
+    Continuă cu Facebook
+  </button>
+
+  <p><span>sau</span></p>
+
+  <button mat-raised-button class="mobile-login-btn"
+  (click)="goToPage('sign-in-phone')">
+    <!-- <mat-icon> stay_current_portrait</mat-icon> -->
+    Utilizează numărul de mobil
+  </button>
+  <button
+    mat-button
+    color="primary"
+    id="sign-up-button"
+    (click)="goToPage('sign-up')"
+  >
+    Nu aveti cont? Inregistrare
+  </button>
+</div>

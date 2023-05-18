@@ -1,0 +1,49 @@
+<div id="sign-in-page">
+  <h1 id="title">DENTALIO</h1>
+  <h4 id="subtitle">Bine ai revenit!</h4>
+  <div id="sign-in-method">
+    <div class="round">
+      <input type="checkbox" checked id="checkbox" />
+      <label for="checkbox"></label>
+    </div>
+    <div id="sign-in-label">
+      <p>Telefon</p>
+    </div>
+    <p id="or">sau</p>
+    <div class="round">
+      <input type="checkbox" checked id="checkbox2" />
+      <label for="checkbox2"></label>
+    </div>
+    <div id="sign-in-label">
+      <p>Email</p>
+    </div>
+  </div>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Telefon" />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Parola"
+        [type]="hide ? 'password' : 'text'"
+        required
+      />
+      <mat-icon matSuffix (click)="hide = !hide">{{
+        hide ? "visibility_off" : "visibility"
+      }}</mat-icon>
+    </mat-form-field>
+  </form>
+  <button mat-raised-button color="primary" (click)="login()">
+    AUTENTIFICARE
+  </button>
+  <button mat-button color="primary">Resetare parola</button>
+  <button
+    mat-button
+    color="primary"
+    id="sign-up-button"
+    (click)="goToPage('sign-up')"
+  >
+    Nu aveti cont? Inregistrare
+  </button>
+</div>

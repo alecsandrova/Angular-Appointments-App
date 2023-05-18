@@ -1,0 +1,41 @@
+#sign-in-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20vh;
+  font-size: 22px;
+  width: 60vw;
+}
+h4 {
+  font-size: 17px;
+  width: 60vw;
+  text-align: center;
+  font-weight: lighter;
+}
+button {
+  margin-top: 3vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  width: 80vw;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+mat-icon{
+    transform: scale(3);
+}
+
+#back{
+    position: absolute;
+    left:0;
+    top:0;
+}

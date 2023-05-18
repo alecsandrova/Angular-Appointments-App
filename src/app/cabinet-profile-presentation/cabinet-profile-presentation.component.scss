@@ -1,0 +1,235 @@
+#page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 17px;
+  overflow-x: hidden;
+}
+
+img {
+  object-fit: scale-down;
+  width: 100vw;
+  height: 25vh;
+}
+
+#rating {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 0px;
+  height: 3vh;
+}
+#adress {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: 5vh;
+  margin-top: 0px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+span {
+  margin-left: 10px;
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+  //   justify-content: flex-end;
+}
+
+mat-icon {
+  margin-top: 11px;
+}
+
+#rating mat-icon {
+  color: #e4cf0f;
+}
+
+mat-chip {
+  color: #1a2d50;
+}
+
+#chips {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  margin-left: 6vw;
+}
+
+.chip {
+  font-size: 15px;
+  width: 20vw;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 2vw;
+}
+
+#details {
+  width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+h4 {
+  margin-bottom: 0px;
+}
+
+#services {
+  width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+#profile {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  margin-top: 2vh;
+}
+
+#profileCard {
+  display: flex;
+  flex-direction: row;
+}
+
+#profileInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5px;
+}
+
+.card {
+  width: 90vw;
+  border-radius: 10px;
+  height: 8vh;
+  border-width: 2px;
+  border-color: #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  box-shadow: none;
+}
+.card-details {
+  background-image: url("../../assets/tooth-icon.png");
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: 10%;
+  padding-left: 10%;
+  width: 60vw;
+  height: 8vh;
+}
+
+.card-details p {
+  margin-left: 10%;
+}
+
+.service-title {
+  margin-top: 1vh;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.service-price {
+  margin-top: 1vh;
+  color: #525252;
+}
+
+.card-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 30vw;
+  height: 8vh;
+}
+
+#reviews {
+  width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.overall-rating {
+  display: flex;
+  flex-direction: row;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 8vh;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+.review-stars {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  //   margin-top: 1vh;
+}
+
+.review-stars ngx-star-rating {
+  position: absolute;
+  right: 0;
+  transform: scale(0.5);
+}
+
+.review p {
+  margin-top: 0px;
+  margin-left: 3vw;
+}
+
+#galery {
+  width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+#galery img {
+  width: 90vw;
+}
+
+#contact {
+  width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+#contact button {
+  width: 70vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-weight: bold;
+}
+
+#schedule {
+  margin-top: 3vh;
+}
+
+#schedule h4 {
+  margin-top: 1.5vh;
+  margin-left: 1vw;
+}
+
+.schedule-row {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  font-weight: bold;
+  height: 3vh;
+}
+
+.period {
+  position: absolute;
+  right: 10%;
+}
+
+#phone{
+        margin-top: 2vh;
+        margin-bottom: 3vh;
+}

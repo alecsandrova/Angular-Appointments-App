@@ -1,0 +1,41 @@
+#navigation-page {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  overflow: hidden !important;
+}
+
+#navigation {
+  width: 100vw;
+  // position: fixed;
+  // overflow: hidden;
+}
+
+mat-tab {
+  overflow: scroll;
+}
+
+.mat-mdc-tab.mdc-tab {
+  height: 7vh !important;
+  width: 25vw;
+  min-width: 25vw;
+}
+
+.mat-mdc-tab .mdc-tab__text-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account {
+  height: 93vh;
+  width: 100vw;
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+}

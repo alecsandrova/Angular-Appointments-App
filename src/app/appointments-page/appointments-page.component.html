@@ -1,0 +1,39 @@
+<div id="page">
+  <div id="title-div">
+    <h1 id="title">Activitatea mea</h1>
+  </div>
+  <mat-tab-group headerPosition="above" mat-align-tabs="start">
+    <mat-tab label="Programări">
+      <div id="appointments">
+        <h4>Următoarele programări</h4>
+        <button mat-raised-button color="primary">Programează-te acum!</button>
+        <h4>Programări anterioare și anulate</h4>
+        <div *ngFor="let cabinet of dummyCabinete">
+          <mat-card>
+            <mat-card-header>
+              <img
+                mat-card-image
+                src="https://t4.ftcdn.net/jpg/05/24/79/53/360_F_524795399_deNrm5E4w2YDrx0JRP8mTe89ghUMvIoC.jpg"
+              />
+            </mat-card-header>
+            <mat-card-content>
+              <mat-card-title>{{ cabinet.nume }}</mat-card-title>
+              <mat-card-subtitle>{{ cabinet.adresa }}</mat-card-subtitle>
+              <div id="rating">
+                <mat-icon>star</mat-icon>
+                <p>{{ cabinet.rating }}</p>
+                <span id="recenzii">
+                  <p>{{ cabinet.recenzii.length }} Recenzii</p>
+                </span>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Notificări">
+      <div id="notifications">
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

@@ -1,0 +1,24 @@
+<div id="page">
+  <h1 id="title">Favorite</h1>
+  <div *ngFor="let cabinet of dummyCabinete">
+    <mat-card>
+      <mat-card-header>
+        <img
+          mat-card-image
+          src="https://t4.ftcdn.net/jpg/05/24/79/53/360_F_524795399_deNrm5E4w2YDrx0JRP8mTe89ghUMvIoC.jpg"
+        />
+      </mat-card-header>
+      <mat-card-content>
+        <mat-card-title>{{ cabinet.nume }}</mat-card-title>
+        <mat-card-subtitle>{{ cabinet.adresa }}</mat-card-subtitle>
+        <div id="rating">
+          <mat-icon>star</mat-icon>
+          <p>{{ cabinet.rating }}</p>
+          <span id="recenzii">
+            <p>{{ cabinet.recenzii.length }} Recenzii</p>
+          </span>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+#page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  height: 93vh;
+  overflow: scroll !important;
+  flex-wrap:unset;
+  justify-content: flex-start;
+}
+#title {
+  margin-top: 2vh;
+  font-size: 20px;
+}
+
+#subtitle {
+  margin-bottom: 7vh;
+}
+
+mat-expansion-panel {
+  width: 80vw;
+  margin-bottom: 2vh;
+}
+
+button {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  width: 80vw;
+  font-size: 17px;
+  font-weight: bold;
+  min-height: 5vh;
+}
+
+#left-align{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    text-align: left;
+    margin-top: 2vh;
+}
+
+.benefit-div{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.benefit-div mat-icon{
+    margin-top: 4vh;
+    margin-left: 5vw;
+    transform: scale(3);
+    overflow: visible;
+}
+
+.benefit-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-left: 6vw;
+}
+
+h5{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+p{
+    margin-top: 0;
+    font-size: 15px;
+}

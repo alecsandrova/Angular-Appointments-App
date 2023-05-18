@@ -1,0 +1,101 @@
+#sign-in-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#title {
+  margin-top: 5vh;
+  font-size: 20px;
+}
+
+button {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  width: 80vw;
+  font-weight: bold;
+  // justify-content: flex-start;
+}
+
+#sign-up-button {
+  // position: absolute;
+  // bottom: 0;
+  // margin-bottom: 10vh;
+  font-size: 15px;
+  margin-top: 2vh;
+}
+
+.google-login-btn {
+  background-image: url("../../assets/google-logo.png");
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: 10%;
+  padding-left: 10%;
+  height: 6vh;
+  // margin-top: 5vh;
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+.facebook-login-btn {
+  background-image: url("../../assets/facebook-logo.png");
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: 10%;
+  padding-left: 10%;
+  height: 5vh;
+  margin-top: 2vh;
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+.mdc-button .mdc-button__label {
+  position: relative;
+  margin-left: 10%;
+}
+
+.mobile-login-btn {
+  background-image: url('../../assets/phone-icon.png'); //temporary solution cause icon doesnt go the place it should
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: 10%;
+  padding-left: 10%;
+  height: 5vh;
+  margin-top: 2vh;
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+p {
+  width: 75vw;
+  text-align: center;
+  border-bottom: 1px solid #9b9b9b;
+  line-height: 0.1em;
+  margin-top: 5vh;
+  // margin-left: 10vw;
+  // margin-top: 10vw;
+}
+
+p span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+h4 {
+  margin-top: 15vh;
+}
+
+mat-icon {
+  transform: scale(1.7);
+}
+
+#back {
+  transform: scale(1.5);
+  position: absolute;
+  left: 0;
+  margin-top: 2vh;
+}

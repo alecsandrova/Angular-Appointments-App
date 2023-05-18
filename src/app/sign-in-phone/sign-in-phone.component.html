@@ -1,0 +1,39 @@
+<div id="sign-in-page">
+  <button mat-icon-button color="primary" id="back" (click)="goToPage('')">
+    <mat-icon>keyboard_arrow_left</mat-icon>
+  </button>
+  <h4 id="subtitle">Introdu numărul tău de telefon</h4>
+  <form class="example-form">
+    <h4>Telefon mobil</h4>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Introdu nr. tău de telefon"
+        [(ngModel)]="phoneNumber"
+        name="phoneNumber"
+      />
+    </mat-form-field>
+  </form>
+  <section class="example-section">
+    <mat-checkbox class="example-margin" [(ngModel)]="checkedTerms"
+      >Am citit si accept <a href="">Termeni si conditii</a></mat-checkbox
+    >
+    <mat-checkbox class="example-margin" [(ngModel)]="checked"
+      >Sunt de acord cu prelucrarea datelor personale conform
+      <a href="">Politicii de confidentialitate</a>
+    </mat-checkbox>
+
+    <div class="error" *ngIf="checkError">
+      <mat-icon>error</mat-icon>
+      <p>Trebuie sa fii de acord cu termenii si conditiile </p>
+    </div>
+    <div class="error" *ngIf="badNumber">
+      <mat-icon>error</mat-icon>
+      <p>Numar de telefon invalid</p>
+    </div>
+  </section>
+
+  <button mat-raised-button color="primary" (click)= "checkStuff()">
+    Trimite cod de verificare
+  </button>
+</div>

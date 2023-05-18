@@ -1,0 +1,21 @@
+<div id="sign-in-page">
+  <button
+    mat-icon-button
+    color="primary"
+    id="back"
+    (click)="goToPage('sign-in-phone')"
+  >
+    <mat-icon>keyboard_arrow_left</mat-icon>
+  </button>
+  <h1>Introdu codul de activare din 6 cifre</h1>
+  <h4>
+    Codul de activare a fost <strong> trimis prin SMS</strong> la
+    <strong>{{phoneNumber}}</strong>
+  </h4>
+  <ng-otp-input
+    (onInputChange)="onOtpChange($event)"
+    [config]="{ length: 6 }"
+  ></ng-otp-input>
+  <button mat-raised-button color="primary" (click)=" verifyCode()">Verifică cod</button>
+  <button mat-button color="primary">Nu ai primit un cod prin SMS?</button>
+</div>

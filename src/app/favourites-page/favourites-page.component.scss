@@ -1,0 +1,43 @@
+#page {
+  display: flex;
+  flex-direction: column;
+  height: 93vh;
+}
+
+#title {
+  color: #1a2d50;
+  font-weight: bolder;
+  font-size: 25px;
+  margin-left: 15vw;
+}
+
+mat-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+mat-card {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+#rating{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+}
+
+span{
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+mat-icon{
+    margin-top: 11px;
+    color: #E4CF0F;
+}
+

@@ -1,0 +1,30 @@
+<div id="page">
+  <div id="header">
+    <button mat-icon-button color="primary" id="back" (click)="goToPage('')">
+      <mat-icon>keyboard_arrow_left</mat-icon>
+    </button>
+    <h2 id="subtitle">Alege data si ora</h2>
+    <button mat-icon-button color="primary" id="close" (click)="goToPage('')">
+        <mat-icon>close</mat-icon>
+      </button>
+  </div>
+
+  <mat-card>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>bazaconie de datepicker cand deja e calendar</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    <mat-calendar
+      [selected]="selectedDate"
+      (selectedChange)="onSelect($event)"
+    ></mat-calendar>
+  </mat-card>
+
+  <p>Here will be the text about the availability of the day</p>
+  <p>TO DO after conecting to API & getting dummy data</p>
+  <button mat-raised-button color="primary" >
+    Mergi la urmatoarea zi disponibila
+  </button>
+  <p>TO DO: when api+dummy data => implement the chosing hour part</p>
+</div>
